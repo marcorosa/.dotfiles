@@ -1,0 +1,7 @@
+[user]
+	name = Marco Rosa
+	email = marcor165@hotmail.it
+[gitreview]
+	username = marcorosa
+[core]
+	editor = /usr/bin/vim
