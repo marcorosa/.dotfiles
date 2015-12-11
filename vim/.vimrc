@@ -20,6 +20,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'andviro/flake8-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -105,8 +106,20 @@ let python_highlight_all = 1
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" flake-8 plugin settings
+" Auto-check file for errors on write
+let g:PyFlakeOnWrite = 1
+" List of checkers used:
+let g:PyFlakeCheckers = 'pep8,mccabe,frosted'
+" Whether to place signs or not:
+let g:PyFlakeSigns = 1 
+" Maximum line length for PyFlakeAuto command
+let g:PyFlakeMaxLineLength = 100
+" Visual-mode key command for PyFlakeAuto
+let g:PyFlakeRangeCommand = 'Q'
+
