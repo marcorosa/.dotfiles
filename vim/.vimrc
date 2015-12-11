@@ -42,10 +42,11 @@ endif
 "set showmatch		" Show matching brackets.
 set ignorecase		" Do case insensitive matching
 set smartcase		" Do smart case matching
-"set incsearch		" Incremental search
+set incsearch		" Incremental search
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
+set hlsearch        " Highlight search
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
@@ -58,4 +59,22 @@ set number
 "highlight LineNr ctermfg=Grey
 "Set background color on the word you are searching
 set hls
+
+" Highlight current line
+"set cursorline
+
+" Enable syntax highlighting
+"syntax enable
+
+" Set tabs to have 4 spaces
+set ts=4
+
+" Expand tabs into spaces
+set expandtab
+
+" Indent when moving to the next line while writing code
+set autoindent
+
+" Enable all Python syntax highlighting features
+let python_highlight_all = 1
 
