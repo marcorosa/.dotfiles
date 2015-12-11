@@ -16,4 +16,8 @@ sudo apt-get update
 sudo apt-get install notepadqq
 
 # misc:
-sudo apt-get install cowsay fortune cmatrix
+sudo apt-get install -y cowsay fortune cmatrix
+
+# Coding
+sudo apt-get install -y build-essential cmake
+sudo apt-get install -y python-dev
