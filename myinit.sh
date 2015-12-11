@@ -17,7 +17,15 @@ sudo apt-get install notepadqq
 
 # misc:
 sudo apt-get install -y cowsay fortune cmatrix
+sudo apt-get install build-essential cmake
+sudo apt-get install python-dev
 
 # Coding
 sudo apt-get install -y build-essential cmake
 sudo apt-get install -y python-dev
+
+# Github
+sudo apt-get install ruby
+sudo apt-get install ruby-dev
+sudo apt-get install rubygems-integration
+sudo gem install git-up 
