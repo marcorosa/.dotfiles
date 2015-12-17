@@ -6,9 +6,9 @@ promptinit
 # example multicolor:
 #PS1="%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[magenta]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
 
-PS1="% %B %{$fg[green]%}%n@%m %{$fg[blue]%}%~ %b %{$reset_color%}%% "
+PS1="% %B%{$fg[green]%}%n@%m %{$fg[blue]%}%~ %b %{$reset_color%}%% "
 # sheldon:
-#PS1="% %B %{$fg[magenta]%}%n@%m %{$fg[blue]%}%~ %b %{$reset_color%}%% "
+#PS1="% %B%{$fg[magenta]%}%n@%m %{$fg[blue]%}%~ %b %{$reset_color%}%% "
 
 #prompt adam1
 #prompt walters
