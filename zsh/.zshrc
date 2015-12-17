@@ -6,7 +6,7 @@ promptinit
 # example multicolor:
 #PS1="%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[magenta]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
 
-PS1="% %B$fg[green]%}%n@%m %{$fg[blue]%}%~ %b %{$reset_color%}%% "
+PS1="% %B %{$fg[green]%}%n@%m %{$fg[blue]%}%~ %b %{$reset_color%}%% "
 # sheldon:
 #PS1="% %B$fg[magenta]%}%n@%m %{$fg[blue]%}%~ %b %{$reset_color%}%% "
 
@@ -82,3 +82,5 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# alias per connettersi all'ufficio
+alias unibgvpn="sshuttle -r thesis -vv xxx.xxx.xxx.0/24"
