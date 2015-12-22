@@ -2,10 +2,17 @@
 
 sudo apt-get update
 sudo apt-get install -y autojump dropbox git htop ipython silversearcher-ag unrar vim
+
 # Shell:
 sudo apt-get install -y zsh git-core
+# zsh autocompletion
+git clone git://github.com/tarruda/zsh-autosuggestions ./zsh/.zsh/zsh-autosuggestions
+# zsh highlighting
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ./zsh/.zsh/zsh-syntax-highlighting
+
 # Graphics:
 sudo apt-get install -y compizconfig-settings-manager compiz-plugins-extra stow tmux 
+
 # VPN:
 sudo apt-get install -y sshuttle
 #sudo apt-get install ipython3
