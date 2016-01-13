@@ -4,4 +4,6 @@
 [gitreview]
 	username = marcorosa
 [core]
-	editor = /usr/bin/vim
+    editor = /usr/bin/vim
+[push]
+    default = simple
