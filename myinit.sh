@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install -y autojump dropbox git htop ipython silversearcher-ag unrar vim
+sudo apt-get install -y autojump htop ipython silversearcher-ag unrar vlc vim
 
 # Shell:
 sudo apt-get install -y zsh git-core
@@ -20,19 +20,19 @@ sudo apt-get install -y sshuttle
 # notepadqq:
 sudo add-apt-repository ppa:notepadqq-team/notepadqq
 sudo apt-get update
-sudo apt-get install notepadqq
+sudo apt-get install -y notepadqq
 
 # misc:
 sudo apt-get install -y cowsay fortune cmatrix
-sudo apt-get install build-essential cmake
-sudo apt-get install python-dev
+sudo apt-get install -y build-essential cmake
+sudo apt-get install -y python-dev
 
 # Coding
 sudo apt-get install -y build-essential cmake
 sudo apt-get install -y python-dev
 
 # Github
-sudo apt-get install ruby
-sudo apt-get install ruby-dev
-sudo apt-get install rubygems-integration
+sudo apt-get install -y ruby
+sudo apt-get install -y ruby-dev
+sudo apt-get install -y rubygems-integration
 sudo gem install git-up 
