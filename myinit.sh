@@ -2,6 +2,7 @@
 
 sudo apt-get update
 sudo apt-get install -y autojump htop ipython silversearcher-ag unrar vlc vim
+sudo apt-get install -y python-pip
 
 # Shell:
 sudo apt-get install -y zsh git-core
@@ -31,8 +32,5 @@ sudo apt-get install -y python-dev
 sudo apt-get install -y build-essential cmake
 sudo apt-get install -y python-dev
 
-# Github
-sudo apt-get install -y ruby
-sudo apt-get install -y ruby-dev
-sudo apt-get install -y rubygems-integration
-sudo gem install git-up 
+# Git-up
+sudo pip install git-up
