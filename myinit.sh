@@ -1,8 +1,10 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install -y autojump htop ipython silversearcher-ag unrar vlc vim
+sudo apt-get install -y autojump htop ipython silversearcher-ag
 sudo apt-get install -y python-pip
+sudo apt-get install -y vim vim-gtk
+sudo apt-get install -y unrar vlc
 
 # Shell:
 sudo apt-get install -y zsh git-core
