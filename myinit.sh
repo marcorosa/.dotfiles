@@ -1,10 +1,15 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install -y autojump htop ipython silversearcher-ag
-sudo apt-get install -y python-pip
+sudo apt-get install -y autojump htop silversearcher-ag
 sudo apt-get install -y vim vim-gtk
 sudo apt-get install -y unrar vlc
+
+# Python utils:
+sudo apt-get install -y python-pip
+sudo apt-get install -y ipithon
+sudo pip install sshuttle    # VPN
+#sudo apt-get install ipython3
 
 # Shell:
 sudo apt-get install -y zsh git-core
@@ -15,10 +20,6 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ./zsh/.zsh/zsh-
 
 # Graphics:
 sudo apt-get install -y compizconfig-settings-manager compiz-plugins-extra stow tmux 
-
-# VPN:
-sudo apt-get install -y sshuttle
-#sudo apt-get install ipython3
 
 # notepadqq:
 sudo add-apt-repository ppa:notepadqq-team/notepadqq
