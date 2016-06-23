@@ -86,7 +86,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # alias per connettersi all'ufficio
-alias unibgvpn="sshuttle -r thesis -vv xxx.xxx.xxx.0/24"
+alias unibgvpn="sshuttle -r speedy -vv xxx.xxx.xxx.0/24"
 
 # Enable fish-like colored suggestions
 # Load zsh-syntax-highlighting.
@@ -106,3 +106,5 @@ autosuggest_start
 # use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
 # zsh-autosuggestions is designed to be unobtrusive)
 #bindkey '^T' autosuggest-toggle
+
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
