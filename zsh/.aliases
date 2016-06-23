@@ -1,0 +1,8 @@
+# same old aliases...
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# alias per connettersi all'ufficio
+alias unibgvpn="sshuttle -r speedy -vv xxx.xxx.xxx.0/24"
+

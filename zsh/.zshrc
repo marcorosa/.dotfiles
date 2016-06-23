@@ -80,13 +80,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-# alias per connettersi all'ufficio
-alias unibgvpn="sshuttle -r speedy -vv xxx.xxx.xxx.0/24"
+# Load aliases
+source ~/.aliases
 
 # Enable fish-like colored suggestions
 # Load zsh-syntax-highlighting.
