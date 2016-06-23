@@ -10,9 +10,6 @@ PS1="% %B%{$fg[green]%}%n@%m %{$fg[blue]%}%~ %b %{$reset_color%}%% "
 # sheldon:
 #PS1="% %B%{$fg[magenta]%}%n@%m %{$fg[blue]%}%~ %b %{$reset_color%}%% "
 
-#prompt adam1
-#prompt walters
-
 setopt histignorealldups sharehistory
 
 # Use emacs keybindings even if our EDITOR is set to vi
