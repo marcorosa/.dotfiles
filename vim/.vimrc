@@ -123,3 +123,5 @@ let g:PyFlakeMaxLineLength = 100
 " Visual-mode key command for PyFlakeAuto
 let g:PyFlakeRangeCommand = 'Q'
 
+" Execute python scripts
+autocmd FileType python nnoremap <F9> :w !python<CR>
