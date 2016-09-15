@@ -4,5 +4,5 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # alias per connettersi all'ufficio
-alias unibgvpn="sshuttle -r speedy -vv xxx.xxx.xxx.0/24"
-
+alias unibgvpn="sshuttle -r bender -vv xxx.xxx.xxx.0/24"
+alias csrepovpn="sudo openvpn --client --config /etc/openvpn/openvpn_csrepo_full.ovpn"
