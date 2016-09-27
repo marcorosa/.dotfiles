@@ -125,3 +125,6 @@ let g:PyFlakeRangeCommand = 'Q'
 
 " Execute python scripts
 autocmd FileType python nnoremap <F9> :w !python<CR>
+
+" Markdown file completion
+let g:ycm_filetype_blacklist={'markdown':0}
