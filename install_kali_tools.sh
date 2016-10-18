@@ -14,3 +14,6 @@ sudo apt-get install -y pngtools
 
 # Hex editor
 sudo apt-get install -y bless
+
+# Utilities
+sudo apt-get install -y strace
