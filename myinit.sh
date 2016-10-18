@@ -22,7 +22,7 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ./zsh/.zsh/zsh-
 sudo apt-get install -y compizconfig-settings-manager compiz-plugins-extra stow tmux 
 
 # Add PPA
-sudo apt-get install software-properties-common
+sudo apt-get install -y software-properties-common
 
 # notepadqq:
 sudo add-apt-repository ppa:notepadqq-team/notepadqq
