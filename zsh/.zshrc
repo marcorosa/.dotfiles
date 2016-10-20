@@ -85,15 +85,7 @@ source ~/.aliases
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Load zsh-autosuggestions.
-source ~/.zsh/zsh-autosuggestions/autosuggestions.zsh
-# Enable autosuggestions automatically.
-# Switch autosuggestions repo to branch 'v0.1.x' 
-autosuggest_start
-
-#zle-line-init() {
-#  zle autosuggest-start
-#}
-#zle -N zle-line-init
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
 # zsh-autosuggestions is designed to be unobtrusive)
