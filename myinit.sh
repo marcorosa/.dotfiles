@@ -15,6 +15,7 @@ sudo apt-get install -y ipython
 # Networking
 sudo pip install sshuttle  # VPN
 sudo apt-get install network-manager-openvpn
+sudo apt-get install network-manager-openvpn-gnome
 sudo apt-get install openssh-client
 #sudo apt-get install openssh-server  # For servers
 
