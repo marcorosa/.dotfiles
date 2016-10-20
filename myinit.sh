@@ -7,7 +7,7 @@ sudo apt-get install -y unrar vlc
 
 # Python utils:
 sudo apt-get install -y python-pip
-sudo apt-get install -y ipithon
+sudo apt-get install -y ipython
 sudo pip install sshuttle    # VPN
 #sudo apt-get install ipython3
 
