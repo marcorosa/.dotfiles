@@ -1,15 +1,22 @@
 #!/bin/bash
 
 sudo apt-get update
+
 sudo apt-get install -y autojump htop silversearcher-ag
 sudo apt-get install -y vim vim-gtk
 sudo apt-get install -y unrar vlc
+sudo apt-get install -y stow tmux
 
 # Python utils:
 sudo apt-get install -y python-pip
 sudo apt-get install -y ipython
-sudo pip install sshuttle    # VPN
 #sudo apt-get install ipython3
+
+# Networking
+sudo pip install sshuttle  # VPN
+sudo apt-get install network-manager-openvpn
+sudo apt-get install openssh-client
+#sudo apt-get install openssh-server  # For servers
 
 # Shell:
 sudo apt-get install -y zsh git-core
@@ -20,7 +27,6 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ./zsh/.zsh/zsh-
 
 # Graphics:
 sudo apt-get install -y compizconfig-settings-manager compiz-plugins-extra
-sudo apt-get install -y stow tmux
 
 # Add PPA
 sudo apt-get install -y software-properties-common
@@ -32,8 +38,6 @@ sudo apt-get install -y notepadqq
 
 # misc:
 sudo apt-get install -y cowsay fortune cmatrix
-sudo apt-get install -y build-essential cmake
-sudo apt-get install -y python-dev
 
 # Coding
 sudo apt-get install -y build-essential cmake
