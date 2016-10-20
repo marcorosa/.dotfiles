@@ -13,11 +13,13 @@ sudo apt-get install -y ipython
 #sudo apt-get install ipython3
 
 # Networking
-sudo pip install sshuttle  # VPN
-sudo apt-get install network-manager-openvpn
-sudo apt-get install network-manager-openvpn-gnome
-sudo apt-get install openssh-client
-#sudo apt-get install openssh-server  # For servers
+sudo pip install -y sshuttle  # VPN
+sudo apt-get install -y network-manager-openvpn  # openvpn
+sudo apt-get install -y network-manager-openvpn-gnome
+sudo apt-get install -y network-manager-pptp  # vpn pptp
+sudo apt-get install -y network-manager-pptp-gnome
+sudo apt-get install -y openssh-client
+#sudo apt-get install -y openssh-server  # For servers
 
 # Shell:
 sudo apt-get install -y zsh git-core
