@@ -45,6 +45,7 @@ sudo apt-get install -y cowsay fortune cmatrix
 # Coding
 sudo apt-get install -y build-essential cmake
 sudo apt-get install -y python-dev
+pip install virtualenv
 
 # Git-up
-sudo pip install git-up
+pip install git-up

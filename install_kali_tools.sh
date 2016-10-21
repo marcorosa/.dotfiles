@@ -9,11 +9,12 @@ sudo apt-get install -y guake
 sudo apt-get install -y irssi irssi-scripts screen openssh-server
 sudo apt-get install -y hexchat
 
-# pngtools
-sudo apt-get install -y pngtools
-
 # Hex editor
 sudo apt-get install -y bless
 
 # Utilities
 sudo apt-get install -y strace
+
+# Tools for CTFs
+sudo apt-get install -y pngtools
+pip install pwntools
