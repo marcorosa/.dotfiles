@@ -49,3 +49,6 @@ pip install virtualenv
 
 # Git-up
 pip install git-up
+
+# Progress bar shell
+sudo echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
