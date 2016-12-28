@@ -12,7 +12,7 @@ sudo apt-get install -y python-pip
 sudo apt-get install -y ipython
 #sudo apt-get install ipython3
 
-# Networking
+# Networking:
 sudo pip install -y sshuttle  # VPN
 sudo apt-get install -y network-manager-openvpn  # openvpn
 sudo apt-get install -y network-manager-openvpn-gnome
@@ -28,27 +28,25 @@ git clone git://github.com/tarruda/zsh-autosuggestions ./zsh/.zsh/zsh-autosugges
 # zsh highlighting
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ./zsh/.zsh/zsh-syntax-highlighting
 
+# Coding:
+pip install git-up
+sudo apt-get install -y build-essential cmake
+sudo apt-get install -y python-dev
+pip install virtualenv
+
 # Graphics:
 sudo apt-get install -y compizconfig-settings-manager compiz-plugins-extra
 
 # Add PPA
 sudo apt-get install -y software-properties-common
 
-# notepadqq:
+# Notepadqq:
 sudo add-apt-repository ppa:notepadqq-team/notepadqq
 sudo apt-get update
 sudo apt-get install -y notepadqq
 
-# misc:
+# Misc:
 sudo apt-get install -y cowsay fortune cmatrix
-
-# Coding
-sudo apt-get install -y build-essential cmake
-sudo apt-get install -y python-dev
-pip install virtualenv
-
-# Git-up
-pip install git-up
 
 # Progress bar shell
 sudo echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
