@@ -45,6 +45,10 @@ sudo add-apt-repository ppa:notepadqq-team/notepadqq
 sudo apt-get update
 sudo apt-get install -y notepadqq
 
+# Jekyll:
+sudo apt-get install -y ruby ruby-dev make gcc
+sudo gem install jekyll bundler
+
 # Misc:
 sudo apt-get install -y cowsay fortune cmatrix
 
