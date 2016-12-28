@@ -6,6 +6,7 @@ sudo apt-get install -y autojump htop silversearcher-ag
 sudo apt-get install -y vim vim-gtk
 sudo apt-get install -y unrar vlc
 sudo apt-get install -y stow tmux
+sudo apt-get install -y software-properties-common  # Add PPA
 
 # Python utils:
 sudo apt-get install -y python-pip
@@ -36,9 +37,6 @@ pip install virtualenv
 
 # Graphics:
 sudo apt-get install -y compizconfig-settings-manager compiz-plugins-extra
-
-# Add PPA
-sudo apt-get install -y software-properties-common
 
 # Notepadqq:
 sudo add-apt-repository ppa:notepadqq-team/notepadqq
