@@ -101,6 +101,10 @@ set autoindent
 " Enable all Python syntax highlighting features
 let python_highlight_all = 1
 
+" Nerdtree plugin settings
+map <F3> :NERDTreeFocus<CR>     " Focus (or open, if closed)
+map <F4> :NERDTreeToggle<CR>    " Open and close
+
 
 " syntastic plugin settings
 set statusline+=%#warningmsg#
