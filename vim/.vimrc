@@ -21,6 +21,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'andviro/flake8-vim'
+Plugin 'ntpeters/vim-better-whitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -68,7 +69,7 @@ set ignorecase		" Do case insensitive matching
 set smartcase		" Do smart case matching
 set incsearch		" Incremental search
 "set autowrite		" Automatically save before commands like :next and :make
-"set hidden	    	" Hide buffers when they are abandoned
+"set hidden         " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
 set hlsearch        " Highlight search
 
@@ -121,7 +122,7 @@ let g:PyFlakeOnWrite = 1
 " List of checkers used:
 let g:PyFlakeCheckers = 'pep8,mccabe,frosted'
 " Whether to place signs or not:
-let g:PyFlakeSigns = 1 
+let g:PyFlakeSigns = 1
 " Maximum line length for PyFlakeAuto command
 let g:PyFlakeMaxLineLength = 100
 " Visual-mode key command for PyFlakeAuto
@@ -132,3 +133,6 @@ autocmd FileType python nnoremap <F9> :w !python<CR>
 
 " Markdown file completion
 let g:ycm_filetype_blacklist={'markdown':0}
+
+" Set line width to 80 columns
+set textwidth=80
