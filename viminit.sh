@@ -8,3 +8,5 @@ vim +PluginInstall +qall
 # YCM
 ./vim/.vim/bundle/YouCompleteMe/install.py
 
+# CoVim requirements
+# pip install twisted argparse service_identity
