@@ -22,6 +22,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'andviro/flake8-vim'
 Plugin 'ntpeters/vim-better-whitespace'
+"Plugin 'FredKSchott/CoVim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -136,3 +137,7 @@ let g:ycm_filetype_blacklist={'markdown':0}
 
 " Set line width to 80 columns
 set textwidth=80
+
+" CoVim settings
+"let CoVim_default_name = "marco"
+"let CoVim_default_port = "8000"
