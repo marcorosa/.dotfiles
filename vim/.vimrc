@@ -46,6 +46,13 @@ if has("syntax")
   syntax on
 endif
 
+" Viminfo settings
+set viminfo='100,<300,s10,h
+" '100 = remember last 100 files edited
+" <300 = max 300 lines to copy
+" s10 = max 10kb size for .viminfo file
+" h = disable hlsearch when loading the vivminfo file
+
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
 "set background=dark
