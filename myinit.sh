@@ -14,20 +14,13 @@ sudo apt-get install -y ipython
 #sudo apt-get install ipython3
 
 # Networking:
-sudo pip install -y sshuttle  # VPN
+pip install -y sshuttle  # VPN
 sudo apt-get install -y network-manager-openvpn  # openvpn
 sudo apt-get install -y network-manager-openvpn-gnome
 sudo apt-get install -y network-manager-pptp  # vpn pptp
 sudo apt-get install -y network-manager-pptp-gnome
 sudo apt-get install -y openssh-client
 #sudo apt-get install -y openssh-server  # For servers
-
-# Shell:
-sudo apt-get install -y zsh git-core
-# zsh autocompletion
-git clone git://github.com/tarruda/zsh-autosuggestions ./zsh/.zsh/zsh-autosuggestions
-# zsh highlighting
-git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ./zsh/.zsh/zsh-syntax-highlighting
 
 # Coding:
 pip install git-up
