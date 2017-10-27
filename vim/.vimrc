@@ -121,8 +121,12 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+" latex
+" let g:syntastic_tex_checkers=['chktex']
+" Syntastic blacklist filetypes
+let g:syntastic_mode_map = { 'passive_filetypes': ['tex'] }
 
 " flake-8 plugin settings
 " Auto-check file for errors on write
@@ -132,7 +136,7 @@ let g:PyFlakeCheckers = 'pep8,mccabe,frosted'
 " Whether to place signs or not:
 let g:PyFlakeSigns = 1
 " Maximum line length for PyFlakeAuto command
-let g:PyFlakeMaxLineLength = 100
+let g:PyFlakeMaxLineLength = 80
 " Visual-mode key command for PyFlakeAuto
 let g:PyFlakeRangeCommand = 'Q'
 
