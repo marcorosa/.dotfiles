@@ -28,6 +28,11 @@ sudo apt-get install -y build-essential cmake
 sudo apt-get install -y python-dev
 pip install virtualenv
 
+# Markdown to slides
+sudo apt-get install nodejs
+sudo apt-get install npm
+npm install markdown-to-slides -g
+
 # Graphics:
 sudo apt-get install -y compizconfig-settings-manager compiz-plugins-extra
 
