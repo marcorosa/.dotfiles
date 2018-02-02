@@ -22,6 +22,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'andviro/flake8-vim'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'vim-airline/vim-airline'
+"Bundle 'ntpeters/vim-airline-colornum'  " Broken
 "Plugin 'FredKSchott/CoVim'
 
 " All of your Plugins must be added before the following line
