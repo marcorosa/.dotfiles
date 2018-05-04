@@ -10,3 +10,6 @@ vim +PluginInstall +qall
 
 # CoVim requirements
 # pip install twisted argparse service_identity
+
+# Requirements
+pip install flake8

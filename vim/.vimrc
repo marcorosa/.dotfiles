@@ -17,13 +17,15 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'scrooloose/syntastic'
-Plugin 'andviro/flake8-vim'
+"Plugin 'andviro/flake8-vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'vim-airline/vim-airline'
+Plugin 'Valloric/YouCompleteMe'
+" Syntax highlighting
+Plugin (v:version < 800 ? 'scrooloose/syntastic' : 'w0rp/ale')
 "Bundle 'ntpeters/vim-airline-colornum'  " Broken
 "Plugin 'FredKSchott/CoVim'
 
@@ -72,8 +74,6 @@ set viminfo='100,<300,s10,h
 "  filetype plugin indent on
 "endif
 
-" The following are commented out as they cause vim to behave a lot
-" differently from regular Vi. They are highly recommended though.
 "set showcmd		" Show (partial) command in status line.
 "set showmatch		" Show matching brackets.
 set ignorecase		" Do case insensitive matching
@@ -83,6 +83,7 @@ set incsearch		" Incremental search
 "set hidden         " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
 set hlsearch        " Highlight search
+set textwidth=80    " Set line width to 80 columns
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
@@ -118,7 +119,7 @@ map <F3> :NERDTreeFocus<CR>     " Focus (or open, if closed)
 map <F4> :NERDTreeToggle<CR>    " Open and close
 
 
-" syntastic plugin settings
+" Syntastic plugin settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -131,17 +132,24 @@ let g:syntastic_check_on_wq = 0
 " Syntastic blacklist filetypes
 let g:syntastic_mode_map = { 'passive_filetypes': ['tex'] }
 
-" flake-8 plugin settings
-" Auto-check file for errors on write
-let g:PyFlakeOnWrite = 1
-" List of checkers used:
-let g:PyFlakeCheckers = 'pep8,mccabe,frosted'
-" Whether to place signs or not:
-let g:PyFlakeSigns = 1
-" Maximum line length for PyFlakeAuto command
-let g:PyFlakeMaxLineLength = 80
-" Visual-mode key command for PyFlakeAuto
-let g:PyFlakeRangeCommand = 'Q'
+
+" Ale plugin settings
+let g:ale_list_window_size = 5  " show 5 lines of errors (default is 10)
+" ignore 'from xxx import *' error
+let g:ale_python_flake8_options = '--ignore=F403,F405'
+
+
+"" flake-8 plugin settings
+"" Auto-check file for errors on write
+"let g:PyFlakeOnWrite = 1
+"" List of checkers used:
+"let g:PyFlakeCheckers = 'pep8,mccabe,frosted'
+"" Whether to place signs or not:
+"let g:PyFlakeSigns = 1
+"" Maximum line length for PyFlakeAuto command
+"let g:PyFlakeMaxLineLength = 80
+"" Visual-mode key command for PyFlakeAuto
+"let g:PyFlakeRangeCommand = 'Q'
 
 " Execute python scripts
 autocmd FileType python nnoremap <F9> :w !python<CR>
@@ -151,8 +159,6 @@ autocmd FileType markdown nnoremap <F9> :w !markdown-to-slides -d % -o %:r.html<
 " Markdown file completion
 let g:ycm_filetype_blacklist={'markdown':0}
 
-" Set line width to 80 columns
-set textwidth=80
 
 " CoVim settings
 "let CoVim_default_name = "marco"
