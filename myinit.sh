@@ -39,6 +39,10 @@ npm install markdown-to-slides -g
 # Jekyll:
 sudo gem install jekyll bundler
 
+# Gnome
+sudo apt install gnome-tweaks
+sudo apt install chrome-gnome-shell
+
 # Misc:
 sudo apt install -y cowsay fortune cmatrix
 
