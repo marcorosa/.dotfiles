@@ -3,15 +3,16 @@
 sudo apt update
 
 sudo apt install -y autojump htop silversearcher-ag
-sudo apt install -y vim vim-gtk
-sudo apt install -y unrar vlc
+sudo apt install -y vim
+sudo apt install -y unrar
 sudo apt install -y stow tmux
 sudo apt install -y software-properties-common  # Add PPA
 
 # Python utils:
 sudo apt install -y python-pip
-sudo apt install -y ipython
-#sudo apt-get install ipython3
+pip install -y ipython
+sudo apt install -y python3-pip
+pip3 install -y ipython
 
 # Networking:
 pip install -y sshuttle  # VPN
