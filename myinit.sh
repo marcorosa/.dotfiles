@@ -37,11 +37,6 @@ npm install markdown-to-slides -g
 # Graphics:
 sudo apt install -y compizconfig-settings-manager compiz-plugins-extra
 
-# Notepadqq:
-sudo add-apt-repository ppa:notepadqq-team/notepadqq
-sudo apt update
-sudo apt install -y notepadqq
-
 # Jekyll:
 sudo apt install -y ruby ruby-dev make gcc
 sudo gem install jekyll bundler
