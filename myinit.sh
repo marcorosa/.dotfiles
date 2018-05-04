@@ -42,4 +42,4 @@ sudo gem install jekyll bundler
 sudo apt install -y cowsay fortune cmatrix
 
 # Progress bar shell
-sudo echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
+echo 'Dpkg::Progress-Fancy "1";' | sudo tee /etc/apt/apt.conf.d/99progressbar
