@@ -16,11 +16,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
-"Plugin 'scrooloose/syntastic'
+" Add all your plugins here
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-"Plugin 'andviro/flake8-vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'vim-airline/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
@@ -32,18 +30,6 @@ Plugin (v:version < 800 ? 'scrooloose/syntastic' : 'w0rp/ale')
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-" All system-wide defaults are set in $VIMRUNTIME/debian.vim and sourced by
-" the call to :runtime you can find below.  If you wish to change any of those
-" settings, you should do it in this file (/etc/vim/vimrc), since debian.vim
-" will be overwritten everytime an upgrade of the vim packages is performed.
-" It is recommended to make changes after sourcing debian.vim since it alters
-" the value of the 'compatible' option.
-
-" Uncomment the next line to make Vim more Vi-compatible
-" NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
-" options, so any other options should be set AFTER setting 'compatible'.
-"set compatible
 
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
@@ -83,36 +69,22 @@ set incsearch		" Incremental search
 "set hidden         " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
 set hlsearch        " Highlight search
+
+" Custom settings
 set textwidth=80    " Set line width to 80 columns
+set number          " Show line numbers"
+"highlight LineNr ctermfg=Grey   " Color line number in grey (default: yellow)
+set hls             " Set background color on the word you are searching
+"set cursorline     " Highlight current line
+"syntax enable      " Enable syntax highlighting
+set ts=4            " Set tabs to have 4 spaces
+set expandtab       " Expand tabs into spaces
+set autoindent      " Indent when moving to the next line while writing code
 
-" Source a global configuration file if available
-if filereadable("/etc/vim/vimrc.local")
-  source /etc/vim/vimrc.local
-endif
-
-"Show line numbers"
-set number
-"color line number grey (default = yellow)
-"highlight LineNr ctermfg=Grey
-"Set background color on the word you are searching
-set hls
-
-" Highlight current line
-"set cursorline
-
-" Enable syntax highlighting
-"syntax enable
-
-" Set tabs to have 4 spaces
-set ts=4
 
 " Python settings:
-" Expand tabs into spaces
-set expandtab
-" Indent when moving to the next line while writing code
-set autoindent
 " Enable all Python syntax highlighting features
-let python_highlight_all = 1
+" let python_highlight_all = 1
 
 " Nerdtree plugin settings
 map <F3> :NERDTreeFocus<CR>     " Focus (or open, if closed)
