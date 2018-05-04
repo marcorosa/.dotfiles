@@ -35,9 +35,6 @@ sudo apt install nodejs
 sudo apt install npm
 npm install markdown-to-slides -g
 
-# Graphics:
-sudo apt install -y compizconfig-settings-manager compiz-plugins-extra
-
 # Jekyll:
 sudo gem install jekyll bundler
 
