@@ -23,6 +23,7 @@ sudo apt install -y make gcc
 
 # Networking:
 pip install sshuttle  # VPN
+sudo apt install -y openvpn  # openvpn
 sudo apt install -y network-manager-openvpn  # openvpn
 sudo apt install -y network-manager-openvpn-gnome
 sudo apt install -y network-manager-pptp  # vpn pptp
