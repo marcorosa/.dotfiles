@@ -24,7 +24,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
 " Syntax highlighting
 Plugin (v:version < 800 ? 'scrooloose/syntastic' : 'w0rp/ale')
-"Bundle 'ntpeters/vim-airline-colornum'  " Broken
 "Plugin 'FredKSchott/CoVim'
 
 " All of your Plugins must be added before the following line
@@ -103,7 +102,6 @@ let g:syntastic_check_on_wq = 0
 " let g:syntastic_tex_checkers=['chktex']
 " Syntastic blacklist filetypes
 let g:syntastic_mode_map = { 'passive_filetypes': ['tex'] }
-
 
 " Ale plugin settings
 let g:ale_list_window_size = 5  " show 5 lines of errors (default is 10)
