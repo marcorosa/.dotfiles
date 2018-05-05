@@ -111,3 +111,7 @@ EDITOR=vim
 VISUAL=vim
 
 source ~/.aliases
+
+# Path for global node packages
+NPM_GLOBAL="$HOME/.local/lib/node_modules"
+PATH="$NPM_GLOBAL/bin:$PATH"
