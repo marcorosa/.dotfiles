@@ -31,10 +31,11 @@ sudo apt install -y network-manager-pptp-gnome
 sudo apt install -y openssh-client
 #sudo apt-get install -y openssh-server  # For servers
 
-# Markdown to slides
+# Nodejs
 sudo apt install nodejs
 sudo apt install npm
-npm install markdown-to-slides -g
+npm config set prefix '~/.local/lib/node_modules'
+npm install -g markdown-to-slides
 
 # Jekyll:
 sudo gem install jekyll bundler
