@@ -13,4 +13,5 @@ vim +PluginInstall +qall
 
 # Syntax checkers
 pip install flake8
-npm install -g eslint
+npm install -g eslint   # js
+npm install -g solhint  # solidity
