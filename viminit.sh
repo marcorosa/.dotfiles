@@ -11,5 +11,6 @@ vim +PluginInstall +qall
 # CoVim requirements
 # pip install twisted argparse service_identity
 
-# Requirements
+# Syntax checkers
 pip install flake8
+npm install -g eslint
