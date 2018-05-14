@@ -21,6 +21,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'vim-airline/vim-airline'
+Plugin 'tpope/vim-sleuth'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'Valloric/YouCompleteMe'
 " Syntax highlighting
