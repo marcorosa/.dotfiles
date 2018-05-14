@@ -3,7 +3,6 @@
 sudo apt update
 
 sudo apt install -y autojump htop silversearcher-ag
-sudo apt install -y vim
 sudo apt install -y tmux unrar gparted
 sudo apt install -y software-properties-common  # Add PPA
 
