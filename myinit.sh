@@ -44,6 +44,7 @@ sudo gem install jekyll bundler
 sudo apt install gnome-tweaks
 sudo apt install gnome-shell-extensions
 sudo apt install gnome-shell-pomodoro
+sudo apt install chrome-gnome-shell
 
 # Misc:
 sudo apt install -y cowsay fortune cmatrix
