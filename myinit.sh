@@ -22,6 +22,7 @@ sudo apt install -y ruby ruby-dev
 sudo apt install -y make gcc
 
 # Networking:
+sudo apt install net-tools
 pip install sshuttle  # VPN
 sudo apt install -y openvpn  # openvpn
 sudo apt install -y network-manager-openvpn  # openvpn
