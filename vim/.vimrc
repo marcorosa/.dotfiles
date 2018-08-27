@@ -88,8 +88,10 @@ set autoindent      " Indent when moving to the next line while writing code
 " let python_highlight_all = 1
 
 " Nerdtree plugin settings
-map <F3> :NERDTreeFocus<CR>     " Focus (or open, if closed)
-map <F4> :NERDTreeToggle<CR>    " Open and close
+map <F3> :NERDTreeFocus<CR>         " Focus (or open, if closed)
+map <F4> :NERDTreeToggle<CR>        " Open and close
+let g:NERDTreeMapOpenSplit = 'h'    " Open file in horizontal split
+let g:NERDTreeMapOpenVSplit = 'v'   " Open file in vertical split
 
 
 " Syntastic plugin settings
