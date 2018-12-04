@@ -2,6 +2,8 @@
 
 sudo apt update
 
+# Essentials
+sudo apt install -y git vim
 sudo apt install -y snapd
 sudo apt install -y autojump htop silversearcher-ag
 sudo apt install -y tmux unrar gparted
@@ -42,10 +44,10 @@ npm install -g markdown-to-slides
 sudo gem install jekyll bundler
 
 # Gnome
-sudo apt install gnome-tweaks
-sudo apt install gnome-shell-extensions
-sudo apt install gnome-shell-pomodoro
-sudo apt install chrome-gnome-shell
+sudo apt install -y gnome-tweaks
+sudo apt install -y gnome-shell-extensions
+sudo apt install -y gnome-shell-pomodoro
+sudo apt install -y chrome-gnome-shell
 
 # Misc:
 sudo apt install -y cowsay fortune cmatrix
