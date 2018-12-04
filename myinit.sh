@@ -3,7 +3,7 @@
 sudo apt update
 
 # Essentials
-sudo apt install -y git vim
+sudo apt install -y git vim curl
 sudo apt install -y snapd
 sudo apt install -y autojump htop silversearcher-ag
 sudo apt install -y tmux unrar gparted
