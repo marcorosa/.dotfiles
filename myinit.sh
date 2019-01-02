@@ -8,6 +8,7 @@ sudo apt install -y snapd
 sudo apt install -y autojump htop silversearcher-ag
 sudo apt install -y tmux unrar gparted
 sudo apt install -y software-properties-common  # Add PPA
+sudo apt install -y subversion
 
 # Python utils:
 sudo apt install -y python-dev
