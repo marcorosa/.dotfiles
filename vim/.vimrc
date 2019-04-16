@@ -23,6 +23,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-sleuth'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'mzlogin/vim-smali'
 Plugin 'Valloric/YouCompleteMe'
 " Syntax highlighting
 Plugin (v:version < 800 ? 'scrooloose/syntastic' : 'w0rp/ale')
