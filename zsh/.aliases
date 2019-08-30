@@ -5,5 +5,7 @@ alias l='ls -CF'
 
 # alias per connettersi all'ufficio
 alias unibgvpn="sshuttle -r bender -vv xxx.xxx.xxx.0/24"
+alias homevpn="sudo openvpn --client --config /etc/openvpn/casa.ovpn"
 alias csrepovpn="sudo openvpn --client --config /etc/openvpn/unibg/marco_alltraffic.ovpn"
 alias csrepolight="sudo openvpn --client --config /etc/openvpn/unibg/marco_unibgonly.ovpn"
+alias unimivpn="sshuttle -r mosaicrown -vv 0/0"
