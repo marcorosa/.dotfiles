@@ -128,6 +128,8 @@ let g:ale_python_flake8_options = '--ignore=F403,F405'
 
 " Execute python scripts
 autocmd FileType python nnoremap <F9> :w !python<CR>
+" Execute go scripts
+autocmd FileType go nnoremap <F9> :w !go run %<CR>
 " Generate markdown slides
 autocmd FileType markdown nnoremap <F9> :w !markdown-to-slides -d % -o %:r.html<CR>
 
