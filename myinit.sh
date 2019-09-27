@@ -18,7 +18,6 @@ sudo apt install -y python3-pip
 pip3 install ipython
 
 # Coding:
-pip install git-up
 sudo apt install -y build-essential cmake
 pip install virtualenv
 sudo apt install -y ruby ruby-dev
