@@ -137,8 +137,3 @@ autocmd FileType markdown nnoremap <F9> :w !markdown-to-slides -d % -o %:r.html<
 
 " Markdown file completion
 let g:ycm_filetype_blacklist={'markdown':0}
-
-
-" CoVim settings
-"let CoVim_default_name = "marco"
-"let CoVim_default_port = "8000"
