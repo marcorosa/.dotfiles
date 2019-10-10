@@ -64,7 +64,7 @@ set viminfo='100,<300,s10,h
 "endif
 
 "set showcmd		" Show (partial) command in status line.
-"set showmatch		" Show matching brackets.
+set showmatch		" Show matching brackets.
 set ignorecase		" Do case insensitive matching
 set smartcase		" Do smart case matching
 set incsearch		" Incremental search
