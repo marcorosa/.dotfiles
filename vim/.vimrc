@@ -28,17 +28,10 @@ Plugin 'mzlogin/vim-smali'
 Plugin 'Valloric/YouCompleteMe'
 " Syntax highlighting
 Plugin (v:version < 800 ? 'scrooloose/syntastic' : 'w0rp/ale')
-"Plugin 'FredKSchott/CoVim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-" Vim5 and later versions support syntax highlighting. Uncommenting the next
-" line enables syntax highlighting by default.
-if has("syntax")
-  syntax on
-endif
 
 " Viminfo settings
 set viminfo='100,<300,s10,h
@@ -73,10 +66,10 @@ set number          " Show line numbers"
 "highlight LineNr ctermfg=Grey   " Color line number in grey (default: yellow)
 set hls             " Set background color on the word you are searching
 "set cursorline     " Highlight current line
-"syntax enable      " Enable syntax highlighting
 set ts=4            " Set tabs to have 4 spaces
 set expandtab       " Expand tabs into spaces
 set autoindent      " Indent when moving to the next line while writing code
+syntax on           " Enable syntax highlighting
 
 
 " Nerdtree plugin settings
