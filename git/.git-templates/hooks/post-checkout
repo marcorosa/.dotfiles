@@ -48,6 +48,6 @@ if [[ -z $name || -z $email ]]; then
 fi
 
 git config --local user.email "$email"
-git config --local user.name "$name"
+git config --local gitreview.username "$name"
 
 echo -e "\nIdentity set to $name <$email>"
