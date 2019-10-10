@@ -118,3 +118,10 @@ PATH="$NPM_GLOBAL/bin:$PATH"
 
 # Local packages
 PATH="$HOME/.local/bin:$PATH"
+
+# Go path
+GOPATH=$HOME/go
+PATH="$GOPATH/bin:$PATH"
+
+# Python local packages
+PATH="$HOME/.local/bin:$PATH"
