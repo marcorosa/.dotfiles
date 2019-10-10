@@ -1,8 +1,5 @@
 [user]
 	name = Marco Rosa
-	email = marcor165@hotmail.it
-[gitreview]
-	username = marcorosa
 [alias]
 	tree1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 	tree2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
@@ -14,3 +11,5 @@
 	default = simple
 [credential]
 	helper = cache --timeout=3600
+[init]
+	templatedir = /home/marco/.git-templates
