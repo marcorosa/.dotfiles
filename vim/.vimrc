@@ -17,6 +17,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ntpeters/vim-better-whitespace'
@@ -112,7 +113,8 @@ let g:syntastic_mode_map = { 'passive_filetypes': ['tex'] }
 let g:ale_list_window_size = 5  " show 5 lines of errors (default is 10)
 " ignore 'from xxx import *' error
 let g:ale_python_flake8_options = '--ignore=F403,F405'
-
+" Enable more linters
+let g:ale_linters = {'javascript': ['eslint']}
 
 "" flake-8 plugin settings
 "" Auto-check file for errors on write
