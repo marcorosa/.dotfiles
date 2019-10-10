@@ -57,12 +57,6 @@ set viminfo='100,<300,s10,h
 "  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "endif
 
-" Uncomment the following to have Vim load indentation rules and plugins
-" according to the detected filetype.
-"if has("autocmd")
-"  filetype plugin indent on
-"endif
-
 "set showcmd		" Show (partial) command in status line.
 set showmatch		" Show matching brackets.
 set ignorecase		" Do case insensitive matching
@@ -84,10 +78,6 @@ set ts=4            " Set tabs to have 4 spaces
 set expandtab       " Expand tabs into spaces
 set autoindent      " Indent when moving to the next line while writing code
 
-
-" Python settings:
-" Enable all Python syntax highlighting features
-" let python_highlight_all = 1
 
 " Nerdtree plugin settings
 map <F3> :NERDTreeFocus<CR>         " Focus (or open, if closed)
@@ -115,18 +105,6 @@ let g:ale_list_window_size = 5  " show 5 lines of errors (default is 10)
 let g:ale_python_flake8_options = '--ignore=F403,F405'
 " Enable more linters
 let g:ale_linters = {'javascript': ['eslint']}
-
-"" flake-8 plugin settings
-"" Auto-check file for errors on write
-"let g:PyFlakeOnWrite = 1
-"" List of checkers used:
-"let g:PyFlakeCheckers = 'pep8,mccabe,frosted'
-"" Whether to place signs or not:
-"let g:PyFlakeSigns = 1
-"" Maximum line length for PyFlakeAuto command
-"let g:PyFlakeMaxLineLength = 80
-"" Visual-mode key command for PyFlakeAuto
-"let g:PyFlakeRangeCommand = 'Q'
 
 " Execute python scripts
 autocmd FileType python nnoremap <F9> :w !python<CR>
