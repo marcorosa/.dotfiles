@@ -17,7 +17,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here
-Plugin 'jiangmiao/auto-pairs'
+" Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ntpeters/vim-better-whitespace'
@@ -61,7 +61,7 @@ set incsearch		" Incremental search
 set hlsearch        " Highlight search
 
 " Custom settings
-set textwidth=80    " Set line width to 80 columns
+set textwidth=79    " Set line width to 79 columns
 set number          " Show line numbers"
 "highlight LineNr ctermfg=Grey   " Color line number in grey (default: yellow)
 set hls             " Set background color on the word you are searching
@@ -94,10 +94,16 @@ let g:syntastic_mode_map = { 'passive_filetypes': ['tex'] }
 
 " Ale plugin settings
 let g:ale_list_window_size = 5  " show 5 lines of errors (default is 10)
-" ignore 'from xxx import *' error
-let g:ale_python_flake8_options = '--ignore=F403,F405'
 " Enable more linters
 let g:ale_linters = {'javascript': ['eslint']}
+" ignore 'from xxx import *' error in python
+let g:ale_python_flake8_options = '--ignore=F403,F405'
+
+" Define fixers
+let g:ale_fixers = {'python': ['autopep8', 'yapf']}
+" Bind F8 to fixing problems with ALE
+nmap <F8> <Plug>(ale_fix)
+
 
 " Execute python scripts
 autocmd FileType python nnoremap <F9> :w !python<CR>

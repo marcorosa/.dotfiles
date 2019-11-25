@@ -15,3 +15,7 @@ vim +PluginInstall +qall
 pip install flake8
 npm install -g eslint   # js
 npm install -g solhint  # solidity
+
+# Syntax fixers
+pip install autopep8
+pip install yapf
