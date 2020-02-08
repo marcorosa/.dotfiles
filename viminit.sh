@@ -8,9 +8,6 @@ vim +PluginInstall +qall
 # YCM
 ./vim/.vim/bundle/YouCompleteMe/install.py
 
-# CoVim requirements
-# pip install twisted argparse service_identity
-
 # Syntax checkers
 pip install flake8
 npm install -g eslint   # js
