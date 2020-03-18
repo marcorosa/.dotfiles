@@ -125,3 +125,8 @@ PATH="$GOPATH/bin:$PATH"
 
 # Python local packages
 PATH="$HOME/.local/bin:$PATH"
+
+if [[ "$(uname)" == "Darwin" ]]
+then
+  PATH="$HOME/Library/Python/3.7/bin:$PATH"
+fi
