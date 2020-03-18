@@ -9,6 +9,11 @@ sudo apt install -y autojump htop silversearcher-ag
 sudo apt install -y tmux unrar gparted
 sudo apt install -y software-properties-common  # Add PPA
 sudo apt install -y subversion
+sudo apt install -y stow
+# Shell
+sudo apt install -y zsh git-core
+
+
 
 # Python utils:
 sudo apt install -y python-dev
