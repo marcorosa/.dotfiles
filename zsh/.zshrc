@@ -7,10 +7,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="bira"
-#ZSH_THEME="muse"
-#ZSH_THEME="pygmalion"
 ZSH_THEME="pygmalion-edited"
+#ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -129,4 +127,5 @@ PATH="$HOME/.local/bin:$PATH"
 if [[ "$(uname)" == "Darwin" ]]
 then
   PATH="$HOME/Library/Python/3.7/bin:$PATH"
+  PATH="/usr/local/sbin:$PATH"
 fi
