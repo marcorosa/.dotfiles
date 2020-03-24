@@ -26,4 +26,6 @@ pip3 install ipython
 brew install autojump
 brew install cmake
 brew install gcc
+brew install openvpn
 brew install the_silver_searcher
+brew install tmux
