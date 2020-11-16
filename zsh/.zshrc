@@ -126,6 +126,9 @@ PATH="$HOME/.local/bin:$PATH"
 
 if [[ "$(uname)" == "Darwin" ]]
 then
-  PATH="$HOME/Library/Python/3.7/bin:$PATH"
+  PATH="/usr/local/opt/libpq/bin:$PATH"
   PATH="/usr/local/sbin:$PATH"
+  JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk
+  PATH=$JAVA_HOME/bin:$PATH
+  ANDROID_HOME=/usr/local/share/android-sdk
 fi
