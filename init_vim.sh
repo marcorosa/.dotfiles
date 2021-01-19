@@ -9,11 +9,11 @@ vim +PluginInstall +qall
 ./vim/.vim/bundle/YouCompleteMe/install.py
 
 # Syntax checkers
-pip install flake8
+pip3 install flake8
 npm install -g eslint   # js
 npm install -g solhint  # solidity
 
 # Syntax fixers
-pip install autopep8
-pip install isort
-pip install yapf
+pip3 install autopep8
+pip3 install isort
+pip3 install yapf
