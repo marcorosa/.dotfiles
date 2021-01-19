@@ -100,7 +100,7 @@ let g:ale_linters = {'javascript': ['eslint']}
 let g:ale_python_flake8_options = '--ignore=F403,F405'
 
 " Define fixers
-let g:ale_fixers = {'python': ['autopep8', 'yapf']}
+let g:ale_fixers = {'python': ['autopep8', 'yapf', 'isort']}
 " Bind F8 to fixing problems with ALE
 nmap <F8> <Plug>(ale_fix)
 

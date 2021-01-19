@@ -15,4 +15,5 @@ npm install -g solhint  # solidity
 
 # Syntax fixers
 pip install autopep8
+pip install isort
 pip install yapf
