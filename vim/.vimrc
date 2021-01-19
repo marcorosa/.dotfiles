@@ -22,6 +22,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'vim-airline/vim-airline'
+Plugin 'enricobacis/vim-airline-clock'
 Plugin 'dense-analysis/ale'  " Syntax highlighting
 Plugin 'tpope/vim-sleuth'
 Plugin 'sheerun/vim-polyglot'
