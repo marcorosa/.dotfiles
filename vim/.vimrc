@@ -10,9 +10,6 @@ runtime! debian.vim
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
@@ -40,16 +37,6 @@ set viminfo='100,<300,s10,h
 " s10 = max 10kb size for .viminfo file
 " h = disable hlsearch when loading the vivminfo file
 
-" If using a dark background within the editing area and syntax highlighting
-" turn on this option as well
-"set background=dark
-
-" Uncomment the following to have Vim jump to the last position when
-" reopening a file
-"if has("autocmd")
-"  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-"endif
-
 "set showcmd		" Show (partial) command in status line.
 set showmatch		" Show matching brackets.
 set ignorecase		" Do case insensitive matching
@@ -62,7 +49,7 @@ set hlsearch        " Highlight search
 
 " Custom settings
 set textwidth=79    " Set line width to 79 columns
-set number          " Show line numbers"
+set number          " Show line numbers
 "highlight LineNr ctermfg=Grey   " Color line number in grey (default: yellow)
 set hls             " Set background color on the word you are searching
 "set cursorline     " Highlight current line
@@ -106,7 +93,7 @@ nmap <F8> <Plug>(ale_fix)
 
 
 " Execute python scripts
-autocmd FileType python nnoremap <F9> :w !python<CR>
+autocmd FileType python nnoremap <F9> :w !python3<CR>
 " Execute go scripts
 autocmd FileType go nnoremap <F9> :w !go run %<CR>
 " Generate markdown slides
