@@ -8,7 +8,7 @@ Run the files in the following order:
 
 - *autostow.sh*: Automatically stow .dotfiles
 - *myinit.sh*: Install packages (for Ubuntu)
-- *viminit.sh*: Install vim plugins
+- *init_vim.sh*: Configure vim plugins
 - *shellinit.sh*: Install zsh with theme and plugins
 - *snap.sh*: Install snap packages
 
@@ -20,6 +20,11 @@ For installing security tools (pre-installed in Kali):
 Update `git/git-clone-init.sh` by adding email and username for each git
 endpoint.
 N.B.: Both the https and ssh protocols are needed for each endpoint.
+
+## Vim
+I decided to drop Vundle (not maintained anymore) in favor of vim's built-in
+package manager. [Refer to this blog](https://shapeshed.com/vim-packages/) for
+commands and summary.
 
 ## MacOS
 For MacOS initialization, execute the `mac_init.sh` script instead of
