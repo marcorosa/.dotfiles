@@ -4,13 +4,17 @@ Personal dotfiles
 
 ## Installation guide
 
+Update submodules: `git submodule update --init --recursive`
+
+
 Run the files in the following order:
 
-- *autostow.sh*: Automatically stow .dotfiles
 - *myinit.sh*: Install packages (for Ubuntu)
+- *mac_init.sh*: Install packages (for MacOS)
+- *autostow.sh*: Automatically stow .dotfiles
 - *init_vim.sh*: Configure vim plugins
 - *shellinit.sh*: Install zsh with theme and plugins
-- *snap.sh*: Install snap packages
+- *snap.sh*: Install snap packages (for Ubuntu)
 
 For installing security tools (pre-installed in Kali):
 - *install_kali_tools.sh*
