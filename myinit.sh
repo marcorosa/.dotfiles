@@ -59,3 +59,6 @@ sudo apt install -y cowsay fortune cmatrix
 
 # Progress bar shell
 echo 'Dpkg::Progress-Fancy "1";' | sudo tee /etc/apt/apt.conf.d/99progressbar
+
+# Git line terminator
+git config --global core.autocrlf true

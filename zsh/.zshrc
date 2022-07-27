@@ -114,21 +114,26 @@ source ~/.aliases
 NPM_GLOBAL="$HOME/.local/lib/node_modules"
 PATH="$NPM_GLOBAL/bin:$PATH"
 
-# Local packages
+# Local packages (included python local packages)
 PATH="$HOME/.local/bin:$PATH"
 
 # Go path
 GOPATH=$HOME/go
 PATH="$GOPATH/bin:$PATH"
 
-# Python local packages
-PATH="$HOME/.local/bin:$PATH"
-
 if [[ "$(uname)" == "Darwin" ]]
 then
   PATH="/usr/local/opt/libpq/bin:$PATH"
   PATH="/usr/local/sbin:$PATH"
-  JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk
-  PATH=$JAVA_HOME/bin:$PATH
-  ANDROID_HOME=/usr/local/share/android-sdk
+  PATH="$HOME/Library/Python/3.9/bin:$PATH"
+  JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk"
+  PATH="$JAVA_HOME/bin:$PATH"
+  # ANDROID_HOME=/usr/local/share/android-sdk
+  # GROOVY_HOME=/usr/local/opt/groovy/libexec
 fi
+
+# Use vim installed via brew (i.e., with python3) instead of MacOS system vim
+alias vim='/usr/local/bin/vim'
+
+# GPG
+export GPG_TTY=$(tty)

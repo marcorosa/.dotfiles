@@ -141,4 +141,3 @@ ltmux() {
     tmux -2 new-session -s $WHOAMI
   fi
 }
-
