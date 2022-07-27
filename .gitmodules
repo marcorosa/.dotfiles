@@ -1,0 +1,27 @@
+[submodule "vim/pack/my-plugins/start/vim-airline"]
+	path = vim/pack/my-plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/pack/my-plugins/start/ale"]
+	path = vim/pack/my-plugins/start/ale
+	url = https://github.com/dense-analysis/ale
+[submodule "vim/pack/my-plugins/start/YouCompleteMe"]
+	path = vim/pack/my-plugins/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe
+[submodule "vim/pack/my-plugins/start/nerdtree"]
+	path = vim/pack/my-plugins/start/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "vim/pack/my-plugins/start/nerdtree-git-plugin"]
+	path = vim/pack/my-plugins/start/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin
+[submodule "vim/pack/my-plugins/start/vim-airline-clock"]
+	path = vim/pack/my-plugins/start/vim-airline-clock
+	url = https://github.com/enricobacis/vim-airline-clock
+[submodule "vim/pack/my-plugins/start/vim-better-whitespace"]
+	path = vim/pack/my-plugins/start/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace
+[submodule "vim/pack/my-plugins/start/vim-polyglot"]
+	path = vim/pack/my-plugins/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
+[submodule "vim/pack/my-plugins/start/vim-sleuth"]
+	path = vim/pack/my-plugins/start/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth

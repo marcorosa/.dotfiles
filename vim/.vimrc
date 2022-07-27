@@ -5,31 +5,6 @@ filetype off                  " required
 " properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
 
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-" Add all your plugins here
-" Plugin 'jiangmiao/auto-pairs'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'vim-airline/vim-airline'
-Plugin 'enricobacis/vim-airline-clock'
-Plugin 'dense-analysis/ale'  " Syntax highlighting
-Plugin 'tpope/vim-sleuth'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'mzlogin/vim-smali'
-Plugin 'Valloric/YouCompleteMe'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
 " Viminfo settings
 set viminfo='100,<300,s10,h
 " '100 = remember last 100 files edited
