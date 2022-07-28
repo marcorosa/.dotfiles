@@ -25,3 +25,6 @@
 [submodule "vim/pack/my-plugins/start/vim-sleuth"]
 	path = vim/pack/my-plugins/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth
+[submodule "vim/pack/my-plugins/start/vim-arline-themes"]
+	path = vim/pack/my-plugins/start/vim-arline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
