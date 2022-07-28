@@ -5,6 +5,7 @@ filetype off                  " required
 " properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
 
+
 " Viminfo settings
 set viminfo='100,<300,s10,h
 " '100 = remember last 100 files edited
@@ -34,6 +35,10 @@ set autoindent      " Indent when moving to the next line while writing code
 syntax on           " Enable syntax highlighting
 
 
+" Vim airline settings
+let g:airline_theme='dark'
+
+
 " Nerdtree plugin settings
 map <F3> :NERDTreeFocus<CR>         " Focus (or open, if closed)
 map <F4> :NERDTreeToggle<CR>        " Open and close
@@ -54,6 +59,7 @@ let g:syntastic_check_on_wq = 0
 " Syntastic blacklist filetypes
 let g:syntastic_mode_map = { 'passive_filetypes': ['tex'] }
 
+
 " Ale plugin settings
 let g:ale_list_window_size = 5  " show 5 lines of errors (default is 10)
 " Enable more linters
@@ -67,12 +73,14 @@ let g:ale_fixers = {'python': ['autopep8', 'yapf', 'isort']}
 nmap <F8> <Plug>(ale_fix)
 
 
+" YouCompleteMe settings
+" Markdown file completion
+let g:ycm_filetype_blacklist={'markdown':0}
+
+
 " Execute python scripts
 autocmd FileType python nnoremap <F9> :w !python3<CR>
 " Execute go scripts
 autocmd FileType go nnoremap <F9> :w !go run %<CR>
 " Generate markdown slides
 autocmd FileType markdown nnoremap <F9> :w !markdown-to-slides -d % -o %:r.html<CR>
-
-" Markdown file completion
-let g:ycm_filetype_blacklist={'markdown':0}
